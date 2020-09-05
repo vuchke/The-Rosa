@@ -4,37 +4,36 @@ const selectElement = function (element) {
 };
 
 const menuToggler = selectElement(".menu-toggle");
-const body = selectElement("body");
+const nav = selectElement(".nav");
 
 menuToggler.addEventListener("click", function () {
-  body.classList.toggle('open')
+  nav.classList.toggle("open");
 });
-
 
 // Scroll Reveal
 window.sr = ScrollReveal();
 
-sr.reveal('.animate-left', {
-  origin: 'left',
+sr.reveal(".animate-left", {
+  origin: "left",
   duration: 1000,
-  distance: '25rem',
-  delay: 300
-})
-sr.reveal('.animate-right', {
-  origin: 'right',
+  distance: "25rem",
+  delay: 300,
+});
+sr.reveal(".animate-right", {
+  origin: "right",
   duration: 1000,
-  distance: '25rem',
-  delay: 600
-})
-sr.reveal('.animate-top', {
-  origin: 'top',
+  distance: "25rem",
+  delay: 600,
+});
+sr.reveal(".animate-top", {
+  origin: "top",
   duration: 1000,
-  distance: '25rem',
-  delay: 600
-})
-sr.reveal('.animate-bottom', {
-  origin: 'bottom',
+  distance: "25rem",
+  delay: 600,
+});
+sr.reveal(".animate-bottom", {
+  origin: "bottom",
   duration: 1000,
-  distance: '25rem',
-  delay: 600
-})
+  distance: "25rem",
+  delay: 600,
+});
