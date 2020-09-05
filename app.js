@@ -1,10 +1,5 @@
-// select element function
-const selectElement = function (element) {
-  return document.querySelector(element);
-};
-
-const menuToggler = selectElement(".menu-toggle");
-const nav = selectElement(".nav");
+const menuToggler = document.querySelector(".menu-toggle");
+const nav = document.querySelector(".nav");
 
 menuToggler.addEventListener("click", function () {
   nav.classList.toggle("open");
